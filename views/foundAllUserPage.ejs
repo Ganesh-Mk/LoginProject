@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>All Users Data</h1> <br>
+    <form action="/homeForm" method="post">
+        <input type="submit" value="Go to home page">
+    </form>
+    <br>
+    <% allUserData.forEach((user) => { %>
+        <h2>Name: <%= user.name %></h2>
+        <h3>Email: <%= user.email %></h3>
+        <h3>Password: <%= user.password %></h3>
+        <br>
+    <% }) %>
+    </body>
+    
+</body>
+</html>
